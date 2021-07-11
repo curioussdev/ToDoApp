@@ -2,9 +2,9 @@ import React from 'react';
 
 
 const Navbar = () => {
-    <div>
-        Menu Principal
-    </div>
+    return(
+        <div>Menu Principal</div>
+    );
 };
 
 
