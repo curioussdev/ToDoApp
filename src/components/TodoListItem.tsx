@@ -1,12 +1,15 @@
 import { directive } from '@babel/types';
-import React from 'react';
+import React, {useContext} from 'react';
 import { Todo } from '../models/Todo';
+import {TodoContextType} from '../contexts/TodoContextType';
+import { TodoContext } from '../contexts/TodoContext'
 
 interface TodoLsitItemProps {
     todo: Todo
 }
 
 const TodoLsitItem = (props: TodoLsitItemProps) => {
+    const {removeTodo, toggle} = useContext<TodoContextType>(TodoContext)
 
     const onRemove = (todo: Todo) => {
         console.log(todo)

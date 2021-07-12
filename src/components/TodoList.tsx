@@ -6,7 +6,7 @@ import {TodoContextType} from '../contexts/TodoContextType'
 
 const TodoList = () => {
     const {todos}  = useContext<TodoContextType>(TodoContext)
-}
+
     
     
     return(
