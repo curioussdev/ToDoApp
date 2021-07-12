@@ -24,7 +24,7 @@ const TodoList = () => {
             <tbody>
                 {
                     todos?.map(
-                        todo => (<TodoLsitItem key={todo.id}></TodoLsitItem>)
+                        todo => (<TodoLsitItem key={todo.id} todo={todo}></TodoLsitItem>)
                     )
                 }
             </tbody>

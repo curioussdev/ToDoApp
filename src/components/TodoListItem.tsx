@@ -1,7 +1,17 @@
 import { directive } from '@babel/types';
 import React from 'react';
+import { Todo } from '../models/Todo';
 
-const TodoLsitItem = () => {
+interface TodoLsitItemProps {
+    todo: Todo
+}
+
+const TodoLsitItem = (props: TodoLsitItemProps) => {
+
+
+
+
+
     return(
         <tr className="uk-animation-slide-botton-mediun">
             
@@ -11,7 +21,7 @@ const TodoLsitItem = () => {
                 </label>
             </td>
                         
-            <td className="uk-width-expand">Item</td>
+            <td className="uk-width-expand">{props.todo.title}</td>
 
             <td className="uk-width-auto">
                 <button className="uk-icon-button uk-button-danger" uk-icon="trash" ></button>
