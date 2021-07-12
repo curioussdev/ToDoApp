@@ -1,5 +1,7 @@
 import React from 'react';
+import { getTextOfJSDocComment } from 'typescript';
 import { Todo } from '../models/Todo'
+import TodoLsitItem from './TodoListItem';
 
 const TodoList = () => {
     const todos: Todo[] = [
@@ -22,7 +24,7 @@ const TodoList = () => {
             <tbody>
                 {
                     todos?.map(
-                        todo => (<div key={todo.id}>{todo.title}</div>)
+                        todo => (<TodoLsitItem key={todo.id}></TodoLsitItem>)
                     )
                 }
             </tbody>
