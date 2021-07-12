@@ -10,7 +10,23 @@ const TodoList = () => {
     
     
     return(
-        <div>TodoList</div>
+        <table className="uk-table">
+            <caption>Lista de Tarefas</caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tarefa</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {
+                    todos?.map(
+                        todo => (<div key={todo.id}>{todo.title}</div>)
+                    )
+                }
+            </tbody>
+        </table>
     );
 }
 
