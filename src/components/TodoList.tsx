@@ -7,7 +7,7 @@ const TodoList = () => {
     const todos: Todo[] = [
         {id: 1, title: 'Ir ao supermercado', done: false},
         {id: 2, title: 'Ir a academia', done: false},
-        {id: 3, title: 'Jantar', done: true}
+     
     ];
     
     
