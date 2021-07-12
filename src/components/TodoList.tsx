@@ -1,13 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { getTextOfJSDocComment } from 'typescript';
-import { Todo } from '../models/Todo'
+import { TodoContext } from '../contexts/TodoContext';
 import TodoLsitItem from './TodoListItem';
+import {TodoContextType} from '../contexts/TodoContextType'
 
 const TodoList = () => {
-    const todos: Todo[] = [
-       
-     
-    ];
+    const {todos}  = useContext<TodoContextType>(TodoContext)
+}
     
     
     return(
