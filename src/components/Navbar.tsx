@@ -1,9 +1,26 @@
 import React from 'react';
-
+import '../styles/navbar.css'
 
 const Navbar = () => {
     return(
-        <div>Menu Principal</div>
+        <div className="uk-container">
+            <nav className="uk-navbar">
+                <div className="uk-navbar-left">
+                    <a href="#" className="uk-navbar-item uk-logo">My <span className="todos">Todos</span></a>
+                </div>
+                
+                
+                <div className="uk-navbar-right">
+                    <ul className="uk-navbar-nav">
+                        <li>
+                            <a href="">
+                                <span uk-icon="icon: plus; ratio: 1.2"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     );
 };
 
