@@ -8,6 +8,11 @@ interface TodoLsitItemProps {
 
 const TodoLsitItem = (props: TodoLsitItemProps) => {
 
+    const onRemove = (todo: Todo) => {
+        console.log(todo)
+
+    }
+
     const handleChange = (event: any) => {
         console.log("Mudou")
     }
@@ -27,7 +32,11 @@ const TodoLsitItem = (props: TodoLsitItemProps) => {
             <td className="uk-width-expand">{props.todo.title}</td>
 
             <td className="uk-width-auto">
-                <button className="uk-icon-button uk-button-danger" uk-icon="trash" ></button>
+                <button className="uk-icon-button uk-button-danger" uk-icon="trash" 
+                onClick={() => onRemove(props.todo)}
+                >
+
+                </button>
             </td>
         </tr>
     );
