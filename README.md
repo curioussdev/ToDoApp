@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## We use the UI KIT to the style of the aplication
+
 ## Available Scripts
 
 In the project directory, you can run:
